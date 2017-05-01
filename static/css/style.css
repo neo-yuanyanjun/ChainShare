@@ -1,1 +1,95 @@
 /* 单一事件/产品/话题评论 样式 */
+.page-event {}
+
+.page-event .module-header {
+    position: relative;
+}
+
+.page-event .module-header img {
+    width: 100%;
+}
+
+.page-event .module-header .desc {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 0.32rem;
+    color: #fff;
+    padding-left: 0.3rem;
+}
+
+.page-event .module-article-list {
+    padding-bottom: 0.2rem;
+}
+
+.page-event .wrapper-article {
+    margin-top: 0.3rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.page-event .wrapper-article .wrapper-author{}
+
+.page-event .wrapper-article .wrapper-author .author-thumb {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: 0.24rem;
+}
+
+.page-event .wrapper-article .wrapper-author .author-name {
+    font-size: 0.28rem;
+    color: #000;
+    margin-top: 0.08rem;
+}
+
+.page-event .wrapper-article .wrapper-author .publish-time {
+    font-size: 0.22rem;
+    color: #555;
+}
+
+.page-event .wrapper-article .wrapper-article-brief {
+    margin-top: 0.18rem;
+    background-color: #e5e5e5;
+    font-size: 0.26rem;
+    color: #000;
+    line-height: 0.4rem;
+    padding: 0.16rem 0.24rem;
+    border-radius: 4px;
+}
+
+.page-event .wrapper-article .wrapper-article-brief a {
+    color: #003f94;
+}
+
+.page-event .wrapper-article  .wrapper-feedbacks {
+    margin-top: 0.14rem;
+    text-align: right;
+}
+
+.page-event .wrapper-article  .wrapper-feedbacks .comments,
+.page-event .wrapper-article  .wrapper-feedbacks .upvote {
+    display: inline-block;
+    padding-left: 0.32rem;
+    height: 0.22rem;
+    font-size: 0.2rem;
+    color: #a3a3a3;
+}
+
+.page-event .wrapper-article  .wrapper-feedbacks .comments {
+    margin-right: 0.4rem;
+    background: url(../img/icon-comment.png) no-repeat left center transparent;
+    background-size: 0.28rem 0.22rem;
+}
+
+.page-event .wrapper-article  .wrapper-feedbacks .upvote {
+    margin-right: 0.2rem;
+    background: url(../img/icon-upvote.png) no-repeat left center transparent;
+    background-size: 0.26rem 0.22rem;
+}
+/* 单一事件/产品/话题评论 样式 end */

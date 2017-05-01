@@ -75,3 +75,20 @@ img {
 a {
     text-decoration: none;
 }
+
+.clearfix,
+.ofh {
+    overflow: hidden;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.wrapper-right {
+
+}
