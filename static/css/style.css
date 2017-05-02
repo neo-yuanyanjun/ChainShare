@@ -93,3 +93,103 @@
     background-size: 0.26rem 0.22rem;
 }
 /* 单一事件/产品/话题评论 样式 end */
+
+/* 单一人物言论 样式 start */
+.page-single-people {
+    background-color: #143d5d;
+}
+
+.page-single-people .module-figure {
+    padding: 0.56rem 0 0 0.42rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #143d5d;
+    /*height: 1.5rem;*/
+    z-index: 1000;
+}
+
+.page-single-people .figure-thumb {
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 0.2rem;
+}
+
+.page-single-people .figure-thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-single-people .figure-name {
+    font-size: 0.3rem;
+    line-height: 1;
+    margin-top: 0.14rem;
+    color: #fff;
+}
+
+.page-single-people .figure-signature {
+    font-size: 0.26rem;
+    color: #a3a3a3;
+    line-height: 1;
+    margin-top: 0.18rem;
+}
+
+.page-single-people .module-timeline {
+    margin: 0 0.56rem;
+    border-left: 2px solid #fff;
+    padding-top: 2.06rem;
+    padding-bottom: 1rem;
+    /*overflow: hidden;*/
+}
+
+.page-single-people .wrap-tweet {
+    position: relative;
+    margin-top: 0.58rem;
+}
+
+.page-single-people .wrap-tweet:before {
+    position: absolute;
+    content: " ";
+    overflow: hidden;
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.06rem;
+    /*left: -0.1rem;*/
+    left: calc(-0.1rem - 1px);
+}
+
+.page-single-people .tweet-time {
+    float: left;
+    color: #fff;
+    font-size: 0.3rem;
+    margin-left: 0.3rem;
+    line-height: 0.42rem;
+}
+
+.page-single-people .tweet-position {
+    float: right;
+    margin-right: 0.12rem;
+    line-height: 0.42rem;
+    color: #a7b0ba;
+    font-size: 0.22rem;
+    padding-left: 0.34rem;
+    background: url(../img/icon-position.png) no-repeat left center transparent;
+    background-size: 0.23rem 0.3rem;
+}
+
+.page-single-people .tweet-content {
+    margin-left: 0.3rem;
+    background-color: #b9c8d5;
+    margin-top: 0.2rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    padding: 0.16rem 0.24rem;
+    border-radius: 5px;
+}
+/* 单一人物言论 样式 end */
