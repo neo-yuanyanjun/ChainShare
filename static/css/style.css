@@ -193,3 +193,305 @@
     border-radius: 5px;
 }
 /* 单一人物言论 样式 end */
+
+/* 互怼直播 样式 start */
+.page-conversation {}
+
+.page-conversation .cover {
+    width: 100%;
+    height: 3.24rem;
+    position: relative;
+}
+
+.page-conversation .cover-img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-conversation .cover .audience-num {
+    position: absolute;
+    top: 0.22rem;
+    right: 0.32rem;
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.page-conversation .cover .title {
+    position: absolute;
+    top: 1.32rem;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 0.36rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-conversation .cover .sub-title {
+    position: absolute;
+    top: 1.96rem;
+    left: 0;
+    width: 100%;
+    color: #aeaeae;
+    font-size: 0.24rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-conversation .tab-card {
+    float: left;
+    width: 50%;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.32rem;
+    text-align: center;
+    background-color: #0a659e;
+    color: #a5bcd2;
+}
+
+.page-conversation .tab-card-active {
+    background-color: #0f8bd8;
+    color: #fff;
+}
+
+.page-conversation .viewpoints {
+    margin: 0 0.48rem;
+    padding-top: 0.16rem;
+    padding-bottom: 1rem;
+}
+
+.page-conversation .viewpoint {
+    margin-top: 0.46rem;
+}
+
+.page-conversation .viewpoint-author {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: #0f8bd8;
+    overflow: hidden;
+    border-radius: 50%;
+    float: left;
+    /*margin-right: 0.28rem;*/
+}
+
+.page-conversation .viewpoint-author-thumb {
+    height: 100%;
+    width: 100%;
+}
+
+.page-conversation .viewpoint-main {
+    /*overflow: hidden;*/
+    margin-left: 1.2rem;
+}
+
+.page-conversation .viewpoint-attr {
+    font-size: 0.24rem;
+    line-height: 1;
+}
+
+.page-conversation .viewpoint-author-name {
+    color: #000;
+    float: left;
+}
+
+.page-conversation .viewpoint-publish-time {
+    color: #555;
+    float: right;
+}
+
+.page-conversation .viewpoint-content {
+    margin-top: 0.16rem;
+    padding: 0.2rem 0.27rem;
+    font-size: 0.26rem;
+    line-height: 0.4rem;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    position: relative;
+}
+
+.page-conversation .viewpoint-content a {
+    color: #003f94;
+}
+
+.page-conversation .viewpoint-content:before {
+    position: absolute;
+    left: -0.24rem;
+    top: 0.18rem;
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    overflow: hidden;
+    border: 0.12rem solid #eeeeee;
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.page-conversation .viewpoint-opposition {
+
+}
+
+.page-conversation .viewpoint-opposition .viewpoint-author {
+    float: right;
+}
+
+.page-conversation .viewpoint-opposition .viewpoint-main {
+    margin-left: 0;
+    margin-right: 1.2rem;
+}
+
+.page-conversation .viewpoint-opposition .viewpoint-author-name {
+    float: right;
+}
+
+.page-conversation .viewpoint-opposition .viewpoint-publish-time {
+    float: left;
+}
+
+.page-conversation .viewpoint-opposition .viewpoint-content:before {
+    left: auto;
+    right: -0.24rem;
+    border-color: #eeeeee;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+}
+/* 互怼直播 样式 end */
+
+/* 单条直播 样式 start */
+.page-live .cover {
+    width: 100%;
+    height: 3.24rem;
+    position: relative;
+}
+
+.page-live .cover-img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-live .cover .audience-num {
+    position: absolute;
+    top: 0.22rem;
+    right: 0.32rem;
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 1;
+}
+
+.page-live .cover .title {
+    position: absolute;
+    top: 1.32rem;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 0.36rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-live .cover .sub-title {
+    position: absolute;
+    top: 1.96rem;
+    left: 0;
+    width: 100%;
+    color: #aeaeae;
+    font-size: 0.24rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.page-live .article-list {
+    margin: 0 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.page-live .article {
+    margin-top: 0.36rem;
+}
+
+.page-live .article-main {
+    background-color: #e7e7e7;
+}
+
+.page-live .article-title {
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    color: #000;
+    padding: 0.2rem 0.2rem 0;
+}
+
+.page-live .article-content {
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    color: #686868;
+    padding: 0.12rem 0.2rem 0.2rem;
+}
+
+.page-live .article-attr {
+    margin-top: 0.16rem;
+    font-size: 0.22rem;
+    color: #a3a3a3;
+}
+
+.page-live .article-time {
+    float: left;
+    color: #a3a3a3;
+}
+
+.page-live .article-upvote {
+    float: right;
+    margin-right: 0.1rem;
+    padding-left: 0.36rem;
+    background: url(../img/icon-upvote.png) left center no-repeat transparent;
+    background-size: 0.26rem 0.22rem;
+    color: #a3a3a3;
+}
+
+.page-live .article-comment {
+    float: right;
+    margin-right: 0.4rem;
+    padding-left: 0.36rem;
+    background: url(../img/icon-comment.png) left center no-repeat transparent;
+    background-size: 0.28rem 0.22rem;
+    color: #a3a3a3;
+}
+
+.page-live .article-img-single {
+    width: 100%;
+}
+
+.page-live .article-img-single img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.page-live .article-img-multiple {
+    margin: 0 0.2rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.page-live .article-img-multiple img {
+    /*flex: ;*/
+    width: 1.88rem;
+    height: 1.88rem;
+    margin-bottom: 0.2rem;
+}
+
+.page-live .btn-sticky {
+    color: #fff;
+    background-color: #d00000;
+    padding: 0 0.08rem;
+    margin-left: 0.3rem;
+    border-radius: 3px;
+    font-size: 0.2rem;
+    display: inline-block;
+    height: 0.28rem;
+    line-height: 0.28rem;
+}
+/* 单条直播 样式 end */
