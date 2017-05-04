@@ -495,3 +495,72 @@
     line-height: 0.28rem;
 }
 /* 单条直播 样式 end */
+
+/* 多人物言论 样式 start */
+.page-multiple-peoples,
+.page-multiple-peoples body {
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+}
+@media screen and (orientation:landscape) {
+    body {
+        background-color: red;
+    }
+    .page-multiple-peoples .wrapper {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+ }
+
+@media screen and (orientation:portrait) {
+    body {
+        background-color: blue;
+    }
+    .page-multiple-peoples .wrapper {  
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.page-multiple-peoples .first-screen {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.page-multiple-peoples .first-screen-title {
+    position: relative;
+    font-size: 0.62rem;
+    color: #000;
+    line-height: 1;
+    margin-top: 2.4rem;
+}
+
+.page-multiple-peoples .first-screen-peoples {
+    margin: 1.8rem 1.5rem 0;
+    height: 1.3rem;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.page-multiple-peoples .first-screen-peoples img {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.page-multiple-peoples {}
+/* 多人物言论 样式 end */

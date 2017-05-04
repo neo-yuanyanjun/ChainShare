@@ -7,17 +7,19 @@
 (function (doc, win) {
     var docEle = document.documentElement;
     var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
-    var recalc = function () {
+    var designWidth = 750; // 设计图尺寸
+    var recalc = window.recalc = function (width) {
+        designWidth = width || designWidth;
         var clientWidth = docEle.clientWidth;
         if (!clientWidth) {
             return;
         }
 
-        if (clientWidth >= 750) {
+        if (clientWidth >= designWidth) {
             docEle.style.fontSize = '100px';
         }
         else {
-            docEle.style.fontSize = 100 * (clientWidth / 750) + 'px';
+            docEle.style.fontSize = 100 * (clientWidth / designWidth) + 'px';
         }
     };
 
