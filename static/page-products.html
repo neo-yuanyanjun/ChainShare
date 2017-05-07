@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="page-products">
+<head>
+    <title>产品集锦</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./js/swiper/css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/common.js"></script>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="cover-img">
+                    <img src="./testPic/product-cover.jpg" alt="">
+                </div>
+                <div class="cover-title">
+                     本周最受关注数码产品TOP10
+                </div>
+                <div class="cover-sub-title">
+                    2017.04.05~2017.04.12
+                </div>
+                <div class="cover-content">
+                    4月5日，联合国安理会紧急会议上，美国常驻联合国代表指责叙利亚境内针对平民的化学攻击是由叙利亚政府发动的，结果玻利维亚常驻联合国代表把2013年美国国务卿鲍威尔摇着小瓶子指控伊拉克存在大规模杀伤性武器的照片拿出来怼美国……
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="product-num">
+                    TOP 01
+                </div>
+                <div class="product-img">
+                    <img src="./testPic/product.png" alt="">
+                </div>
+                <div class="product-name">
+                    Oculus rift CV1 VR头带设备
+                </div>
+                <div class="publish-time">
+                    2017.04.05 发布
+                </div>
+                <div class="product-breif">
+                    4月5日，联合国安理会紧急会议上，美国常驻联合国代表指责叙利亚境内针对平民的化学攻击是由叙利亚政府发动的，结果玻利维亚常驻联合国代表把2013年美国国务卿鲍威尔摇着小瓶子指控伊拉克存在大规模杀伤性武器的照片拿出来怼美国……
+                </div>
+                <a href="#" class="icon-pin"></a>
+            </div>
+            <div class="swiper-slide">
+                <div class="product-num">
+                    TOP 02
+                </div>
+                <div class="product-img">
+                    <img src="./testPic/product.png" alt="">
+                </div>
+                <div class="product-name">
+                    Oculus rift CV1 VR头带设备
+                </div>
+                <div class="publish-time">
+                    2017.04.05 发布
+                </div>
+                <div class="product-breif">
+                    4月5日，联合国安理会紧急会议上，美国常驻联合国代表指责叙利亚境内针对平民的化学攻击是由叙利亚政府发动的，结果玻利维亚常驻联合国代表把2013年美国国务卿鲍威尔摇着小瓶子指控伊拉克存在大规模杀伤性武器的照片拿出来怼美国……
+                </div>
+                <a href="#" class="icon-pin"></a>
+            </div>
+            <div class="swiper-slide">
+                <div class="product-num">
+                    TOP 03
+                </div>
+                <div class="product-img">
+                    <img src="./testPic/product.png" alt="">
+                </div>
+                <div class="product-name">
+                    Oculus rift CV1 VR头带设备
+                </div>
+                <div class="publish-time">
+                    2017.04.05 发布
+                </div>
+                <div class="product-breif">
+                    4月5日，联合国安理会紧急会议上，美国常驻联合国代表指责叙利亚境内针对平民的化学攻击是由叙利亚政府发动的，结果玻利维亚常驻联合国代表把2013年美国国务卿鲍威尔摇着小瓶子指控伊拉克存在大规模杀伤性武器的照片拿出来怼美国……
+                </div>
+                <a href="#" class="icon-pin"></a>
+            </div>
+            <div class="swiper-slide">
+                <div class="product-num">
+                    TOP 04
+                </div>
+                <div class="product-img">
+                    <img src="./testPic/product.png" alt="">
+                </div>
+                <div class="product-name">
+                    Oculus rift CV1 VR头带设备
+                </div>
+                <div class="publish-time">
+                    2017.04.05 发布
+                </div>
+                <div class="product-breif">
+                    4月5日，联合国安理会紧急会议上，美国常驻联合国代表指责叙利亚境内针对平民的化学攻击是由叙利亚政府发动的，结果玻利维亚常驻联合国代表把2013年美国国务卿鲍威尔摇着小瓶子指控伊拉克存在大规模杀伤性武器的照片拿出来怼美国……
+                </div>
+                <a href="#" class="icon-pin"></a>
+            </div>
+        </div>
+    </div>
+    <div class="custom-pagination">
+        <span class="pagination-bullet current">H</span>
+        <span class="pagination-bullet">1</span>
+        <span class="pagination-bullet">2</span>
+        <span class="pagination-bullet">3</span>
+        <span class="pagination-bullet">4</span>
+    </div>
+    <div class="arrow-down"></div>
+    <script src="./js/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            paginationClickable: true,
+            spaceBetween: 30,
+            onSlideChangeEnd: function (swiper) {
+                document.querySelector('.pagination-bullet.current').classList.remove('current');
+                document.querySelectorAll('.pagination-bullet')[swiper.activeIndex].classList.add('current');
+            }
+        });
+    </script>
+</body>
+</html>

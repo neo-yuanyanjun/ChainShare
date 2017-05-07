@@ -38,6 +38,10 @@ body{
     background-color: #fff;
 }
 
+a.more {
+    color: #0057e8;
+}
+
 /* 禁止选取文本 */
 html, body {
     user-select: none;
