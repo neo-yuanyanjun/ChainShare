@@ -755,3 +755,120 @@
     }
 }
 /* 多人物言论 样式 end */
+
+/* 政策类 样式 start */
+html.page-policy,
+html.page-policy body {
+    width: 100%;
+    height: 100%;
+}
+
+.page-policy .swiper-container {
+    height: 100%;
+    width: 100%;
+}
+
+.page-policy .swiper-slide {
+    box-sizing: border-box;
+    padding: 0 0.84rem;
+    overflow: hidden;
+    /*padding: 0 10px;*/
+}
+
+.page-policy .collection-cover {
+    /*margin-top: 2.04rem;*/
+    margin-top: 1rem;
+}
+
+.page-policy .collection-title,
+.page-policy .policy-title {
+    margin-top: 0.56rem;
+    font-size: 0.4rem;
+    line-height: 0.6rem;
+    color: #8f8f8f;
+    padding: 0.24rem 0.36rem;
+    border: 5px solid #d00000;
+}
+
+
+.page-policy .policy-title {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.page-policy .swiper-slide-active .policy-title {
+    opacity: 1;
+}
+
+.page-policy .collection-content,
+.page-policy .policy-content {
+    font-size: 0.24rem;
+    line-height: 0.4rem;
+    margin-top: 0.6rem;
+    color: #000;
+}
+
+.page-policy .policy-content {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.page-policy .swiper-slide-active .policy-content {
+    opacity: 1;
+}
+
+.page-policy .policy-attr {
+    margin-top: 0.64rem;
+    line-height: 0.52rem;
+    font-size: 0.26rem;
+    color: #000;
+    float: right;
+    opacity: 0;
+    transform: translate(100%, 0);
+    -webkit-transform: translate(100%, 0);
+    transition: 
+        opacity 0.5s ease-in,
+        -webkit-transform 0.5s ease-in;
+}
+
+.page-policy .policy-attr p:before{
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.page-policy .swiper-slide-active .policy-attr {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+}
+
+.page-policy .policy-attr .label {
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: #fff;
+    background-color: #d00000;
+    border-radius: 4px;
+    /*padding: 0 0 0 0.12rem;*/
+    padding: 0 0.06rem 0 0.06rem;
+    margin-right: 0.18rem;
+}
+
+.page-policy .custom-swiper-pagination {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 1.2rem;
+    line-height: 1;
+    font-size: 0.24rem;
+    color: #000;
+}
+
+.page-policy .custom-swiper-pagination .current-page {
+    font-size: 0.48rem;
+}
+/* 政策类 样式 end */
