@@ -8,8 +8,7 @@
     var docEle = document.documentElement;
     var resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize';
     var designWidth = 750; // 设计图尺寸
-    var recalc = window.recalc = function (width) {
-        designWidth = width || designWidth;
+    var recalc = window.recalc = function (evt) {
         var clientWidth = docEle.clientWidth;
         if (!clientWidth) {
             return;

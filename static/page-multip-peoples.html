@@ -9,7 +9,52 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/common.js"></script>
     <script>
-        recalc(1334);
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            function initWrapperWidth() {
+                var wrapper = document.querySelector('#wrapper');
+                wrapper.style.width = '99999px';
+                var list = document.querySelector('.tweet-list');
+                var totalWidth = list.getBoundingClientRect().right;
+                wrapper.style.width = totalWidth + 'px';
+            }
+
+            initWrapperWidth();
+
+            window.addEventListener('orientationchange', initWrapperWidth, false);
+            window.addEventListener('resize', initWrapperWidth, false);
+
+            var tweets = document.querySelectorAll('.tweet');
+            document.body.addEventListener('scroll', function (e) {
+                var winWidth = document.documentElement.getBoundingClientRect().width;
+
+                for(var i = 0; i < tweets.length; i++) {
+                    var bcr = tweets[i].getBoundingClientRect();
+                    var tweetWidth = bcr.width;
+                    if (
+                        (
+                            bcr.left < 0
+                            && bcr.right > tweetWidth / 2
+                        )
+                        || (
+                            bcr.left > 0
+                            && bcr.right < winWidth
+                        )
+                        || (
+                            bcr.right > winWidth
+                            && bcr.left < winWidth
+                            && winWidth - bcr.left > tweetWidth / 2
+                        )
+                    ) {
+                        tweets[i].classList.add('is-inScreen');
+                    }
+                    else {
+                        tweets[i].classList.remove('is-inScreen');
+                    }
+                }
+            }, false);
+        }, false);
+    })();
     </script>
 </head>
 <body>
@@ -19,21 +64,227 @@
                 关于“智能驾驶”ta们有话要说！
             </div>
             <div class="first-screen-peoples">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
-                <img src="./testPic/people.jpg" alt="">
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
+                <div class="img-wrap">
+                    <img src="./testPic/people.jpg" alt="">
+                </div>
             </div>
         </div>
+        <div class="tweet-list ofh">
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk在推特上表示不久之后 Tesla 会准备一个界面，存放所有你已经发现的彩蛋。只要启用过一次，就再也不用重新输入按键组合或密码，应该很适合那些常常炫耀自己新车功能
+                    </div>
+                    <div class="tweet-attr">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk
+                    </div>
+                    <div class="tweet-attr ofh">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk在推特上表示不久之后 Tesla 会准备一个界面，存放所有你已经发现的彩蛋。只要启用过一次，就再也不用重新输入按键组合或密码，应该很适合那些常常炫耀自己新车功能
+                    </div>
+                    <div class="tweet-attr">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk
+                    </div>
+                    <div class="tweet-attr ofh">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk在推特上表示不久之后 Tesla 会准备一个界面，存放所有你已经发现的彩蛋。只要启用过一次，就再也不用重新输入按键组合或密码，应该很适合那些常常炫耀自己新车功能
+                    </div>
+                    <div class="tweet-attr">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk
+                    </div>
+                    <div class="tweet-attr ofh">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk在推特上表示不久之后 Tesla 会准备一个界面，存放所有你已经发现的彩蛋。只要启用过一次，就再也不用重新输入按键组合或密码，应该很适合那些常常炫耀自己新车功能
+                    </div>
+                    <div class="tweet-attr">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tweet">
+                <div class="wrapper-tweet">
+                    <div class="tweet-content">
+                        过去几年来，Tesla 着实在系统里藏了不少彩蛋，从直接影响性能的 Ludicrous Mode，到真是棒007的潜水艇，再到去年圣诞节时的灯光秀，而且在可预期的未来 Tesla 应该还会在为我们带来更多的彩蛋。为了协助用户「整理」这一大堆说明手册以外的功能，Elon Musk
+                    </div>
+                    <div class="tweet-attr ofh">
+                        <div class="author-thumb">
+                            <img src="./testPic/thumb2.jpg" alt="">
+                        </div>
+                        <div class="ofh">
+                            <div class="tweet-title">
+                                “关于“智能驾驶”ta有话要说！”
+                            </div>
+                            <div class="author-name">
+                                埃隆马斯克
+                            </div>
+                            <div>
+                                2017.05.01 美国硅谷
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="warning">
+        请用横屏模式浏览
     </div>
 </body>
 </html>
