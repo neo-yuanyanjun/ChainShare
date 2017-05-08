@@ -1337,3 +1337,156 @@ html.page-products-ii,
     background-size: 100% 100%;
 }
 /* 产品集锦2 样式 end */
+
+/* 综合专题 样式 start */
+.page-mixed .wrap-banner {
+    width: 100%;
+    height: 2.68rem;
+}
+
+.page-mixed .wrap-banner img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.page-mixed .wrap-tab {
+    background-color: #3c829f;
+    line-height: 0.6rem;
+    height: 0.6rem;
+    color: #b1dbec;
+    font-size: 0.28rem;
+}
+.page-mixed .wrap-tab .tab-item {
+    color: #b1dbec;
+    display: inline-block;
+    margin-left: 0.36rem;
+}
+
+.page-mixed .wrap-tab .tab-item.active {
+    color: #fff;
+}
+
+.page-mixed .artile-style-i {
+    padding: 0.2rem 0.28rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    display: -webkit-flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.page-mixed .artile-style-i .article-img {
+    width: 1.86rem;
+    height: 1.24rem;
+    overflow: hidden;
+}
+
+.page-mixed .artile-style-i .article-img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.page-mixed .artile-style-i .article-profile {
+    width: 4.94rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-mixed .artile-style-i .article-title {
+    font-size: 0.28rem;
+    color: #000;
+    line-height: 0.34rem;
+    margin-top: -0.03rem;
+}
+
+.page-mixed .artile-style-i .article-attr {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 0.22rem;
+    color: #4c4c4c;
+    line-height: 1;
+}
+
+.page-mixed .artile-style-i .article-type {
+    float: left;
+}
+
+.page-mixed .artile-style-i .article-comments {
+    float: right;
+}
+
+.page-mixed .load-more {
+    margin: 0.5rem auto 0;
+    font-size: 0.26rem;
+    width: 1.4rem;
+    text-align: center;
+    color: #7d7d7d;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+}
+
+.page-mixed .article-style-ii,
+.page-mixed .article-style-iii {
+    margin: 0.34rem 0.3rem 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.page-mixed .article-style-ii .article-img {
+    width: 100%;
+    height: 2.42rem; 
+}
+
+.page-mixed .article-style-ii .article-img img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.page-mixed .article-style-ii .article-title,
+.page-mixed .article-style-iii .article-title {
+    font-size: 0.28rem;
+    color: #333333;
+    padding: 0 0.24rem;
+    line-height: 1;
+    margin-top: 0.32rem;
+}
+
+.page-mixed .article-style-ii .article-content,
+.page-mixed .article-style-iii .article-content {
+    font-size: 0.24rem;
+    color: #333333;
+    margin-top: 0.24rem;
+    line-height: 0.4rem;
+    padding: 0 0.24rem;
+}
+
+.page-mixed .article-style-ii .article-attr,
+.page-mixed .article-style-iii .article-attr {
+    padding: 0 0.24rem;
+    margin: 0.24rem 0;
+    font-size: 0.24rem;
+    color: #666666;
+    line-height: 0.4rem;
+}
+
+.page-mixed .article-style-ii .more,
+.page-mixed .article-style-iii .more {
+    height: 0.38rem;
+    line-height: 0.38rem;
+    border: 1px solid #b9b9b9;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 1.26rem;
+    color: #666666;
+    text-align: center;
+}
+/* 综合专题 样式 end */
