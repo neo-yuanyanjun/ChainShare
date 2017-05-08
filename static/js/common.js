@@ -27,4 +27,8 @@
     }
     win.addEventListener(resizeEvent, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
+
+    window.setDesignWidth = function(width) {
+        designWidth = width;
+    }
 })(document, window);

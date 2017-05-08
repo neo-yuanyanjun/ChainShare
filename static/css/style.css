@@ -1215,3 +1215,125 @@ html.page-products,
     background-color: #d00000;
 }
 /* 产品集锦 样式 end */
+
+/* 产品集锦2 样式 start */
+html.page-products-ii,
+.page-products-ii body,
+.page-products-ii .swiper-container {
+    height: 100%;
+    width: 100%;
+}
+
+.page-products-ii .wrap-material {
+    height: 7.46rem;
+    border-bottom: 0.08rem solid #52c0e5;
+    position: relative;
+}
+
+.page-products-ii .wrap-material img {
+    width: 100%;
+    height: 100%;
+}
+
+.page-products-ii .btn-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 1.54rem;
+    background: url(../img/icon-play.png) no-repeat center center transparent;
+    background-size: 100% 100%;
+}
+
+.page-products-ii  .btn-photos {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: center;
+    padding: 0 0.3rem;
+    font-size: 0.3rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.page-products-ii .product-type {
+    width: 4.46rem;
+    text-align: center;
+    height: 0.46rem;
+    line-height: 0.46rem;
+    color: #fff;
+    font-size: 0.24rem;
+    background-color: #52c0e5;
+    margin: 0 auto;
+}
+
+.page-products-ii .title {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    line-height: 0.72rem;
+    color: #000;
+    text-align: center;
+}
+
+.page-products-ii .summary-title {
+    font-size: 0.3rem;
+    color: #000;
+    margin: 0.9rem auto 0;
+    width: 1.9rem;
+    height: 0.52rem;
+    line-height: 0.52rem;
+    background-color: #cccccc;
+    text-align: center;
+}
+
+.page-products-ii .summary-content {
+    margin: 0.8rem 0.9rem 0;
+    line-height: 0.6rem;
+    font-size: 0.36rem;
+    color: #000;
+}
+
+.page-products-ii .arrow-down {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 0.62rem;
+    width: 1.3rem;
+    background: url(../img/arrow-down.png) no-repeat center center transparent;
+    background-size: 100% 100%;
+}
+
+.page-products-ii .number {
+    margin: 0.9rem auto 0;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #fff;
+    font-style: italic;
+    font-size: 0.6rem;
+    width: 0.88rem;
+    height: 0.88rem;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+.page-products-ii .product-breif {
+    margin: 0.8rem 0.9rem 0;
+    line-height: 0.6rem;
+    font-size: 0.36rem;
+    color: #000;
+}
+
+.page-products-ii .product-detail {
+    display: block;
+    margin: 0.4rem auto 0;
+    height: 0.56rem;
+    line-height: 0.56rem;
+    width: 0.56rem;
+    background: url(../img/icon-more.png) no-repeat center center transparent;
+    background-size: 100% 100%;
+}
+/* 产品集锦2 样式 end */
