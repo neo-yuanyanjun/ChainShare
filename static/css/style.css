@@ -1511,4 +1511,39 @@ html.page-products-ii,
 .page-mixed .card-item.active {
     display: block;
 }
+
+.page-mixed .article-detail {
+    margin: 0 0.24rem;
+}
+
+.page-mixed .article-detail-title {
+    font-size: 0.4rem;
+    font-weight: 600;
+    line-height: 0.6rem;
+    color: #000;
+    margin: 0.3rem 0 0.14rem 0;
+}
+
+.page-mixed .article-detail-img-wrapper {
+    position: relative;
+}
+
+.page-mixed .article-detail-img-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #52c0e5;
+    color: #fff;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 0.7rem;
+    text-align: center;
+}
+
+.page-mixed .article-detail-content {
+    font-size: 0.3rem;
+    line-height: 0.52rem;
+    color: #000;
+    margin: 0.2rem 0;
+}
 /* 综合专题 样式 end */
