@@ -40,6 +40,11 @@
     border-radius: 50%;
     background-color: #000;
     margin-right: 0.24rem;
+    overflow: hidden;
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-event .wrapper-article .wrapper-author .author-name {
@@ -273,6 +278,10 @@
     border-radius: 50%;
     float: left;
     /*margin-right: 0.28rem;*/
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-conversation .viewpoint-author-thumb {
@@ -1051,6 +1060,10 @@ html.page-products,
     border: 0.2rem solid #b9b9b9;
     border-radius: 50%;
     overflow: hidden;
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .page-products .cover-img img {
