@@ -96,3 +96,15 @@ a {
 .wrapper-right {
 
 }
+
+.load-more {
+    margin: 0.5rem auto 0.5rem;
+    font-size: 0.26rem;
+    width: 1.4rem;
+    text-align: center;
+    color: #7d7d7d;
+    height: 0.44rem;
+    line-height: 0.44rem;
+    border: 1px solid #b9b9b9;
+    border-radius: 8px;
+}
