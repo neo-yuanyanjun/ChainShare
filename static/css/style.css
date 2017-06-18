@@ -1502,4 +1502,13 @@ html.page-products-ii,
     color: #666666;
     text-align: center;
 }
+
+
+.page-mixed .card-item {
+    display: none;
+}
+
+.page-mixed .card-item.active {
+    display: block;
+}
 /* 综合专题 样式 end */
